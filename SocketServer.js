@@ -21,7 +21,7 @@ ss.on('connection', function(socket) {
 		console.log(song);
 
 		var file = [];
-		file = tools.find("/FYPServer/Music", song);  
+		file = tools.find("/home/moreira/FYPServer/", song);  
 		var filename = file[0] + "/" + file[1];
 		fs.createReadStream(filename).pipe(stream);
 
