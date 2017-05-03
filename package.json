@@ -1,0 +1,26 @@
+{
+  "name": "fypserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "SocketServer.js",
+  "dependencies": {
+    "findit": "^2.0.0",
+    "node-dir": "^0.1.16",
+    "socket.io": "^1.7.2",
+    "socket.io-stream": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diogo-G-Moreira/FYPServer.git"
+  },
+  "author": "Diogo Moreira <diogo.moreira888@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diogo-G-Moreira/FYPServer/issues"
+  },
+  "homepage": "https://github.com/Diogo-G-Moreira/FYPServer#readme"
+}
