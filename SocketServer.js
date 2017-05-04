@@ -1,6 +1,7 @@
 var http = require("http");
 var path = require('path');
 var fs = require("fs");
+var pythonshell = require('python-shell');
 var tools = require('./ObtainFileNames');
 var server = http.createServer();
 
@@ -17,6 +18,9 @@ ss.on('connection', function(socket) {
 
 	socketStream(socket).on('sendFile', function(stream, data) {
 		console.log("here");
+		pythonshell.run('rawcapScript.py', function (err) {
+		if (err) throw err;
+		});
 		var song = data.name;
 		console.log(song);
 
